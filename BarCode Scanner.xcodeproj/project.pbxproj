@@ -13,6 +13,8 @@
 		852005382C09DD7300D03BC6 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 852005372C09DD7300D03BC6 /* Preview Assets.xcassets */; };
 		853389A92C0B302800EDE68F /* ScannerVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 853389A82C0B302800EDE68F /* ScannerVC.swift */; };
 		853389AB2C0B83ED00EDE68F /* ScannerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 853389AA2C0B83ED00EDE68F /* ScannerView.swift */; };
+		853389AD2C0DB57C00EDE68F /* AlertItems.swift in Sources */ = {isa = PBXBuildFile; fileRef = 853389AC2C0DB57C00EDE68F /* AlertItems.swift */; };
+		853389AF2C0DB59F00EDE68F /* BarcodeScannerViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 853389AE2C0DB59F00EDE68F /* BarcodeScannerViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,6 +25,8 @@
 		852005372C09DD7300D03BC6 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		853389A82C0B302800EDE68F /* ScannerVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScannerVC.swift; sourceTree = "<group>"; };
 		853389AA2C0B83ED00EDE68F /* ScannerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScannerView.swift; sourceTree = "<group>"; };
+		853389AC2C0DB57C00EDE68F /* AlertItems.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertItems.swift; sourceTree = "<group>"; };
+		853389AE2C0DB59F00EDE68F /* BarcodeScannerViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BarcodeScannerViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,10 +59,10 @@
 		8520052F2C09DD7200D03BC6 /* BarCode Scanner */ = {
 			isa = PBXGroup;
 			children = (
+				853389B52C0DBBC100EDE68F /* Utilities */,
+				853389B22C0DBB3B00EDE68F /* Views */,
+				853389B02C0DBB0C00EDE68F /* Screens */,
 				852005302C09DD7200D03BC6 /* BarCode_ScannerApp.swift */,
-				852005322C09DD7200D03BC6 /* BarcodeScannerView.swift */,
-				853389A82C0B302800EDE68F /* ScannerVC.swift */,
-				853389AA2C0B83ED00EDE68F /* ScannerView.swift */,
 				852005342C09DD7300D03BC6 /* Assets.xcassets */,
 				852005362C09DD7300D03BC6 /* Preview Content */,
 			);
@@ -71,6 +75,48 @@
 				852005372C09DD7300D03BC6 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		853389B02C0DBB0C00EDE68F /* Screens */ = {
+			isa = PBXGroup;
+			children = (
+				853389B12C0DBB1900EDE68F /* BarcodeScanner */,
+			);
+			path = Screens;
+			sourceTree = "<group>";
+		};
+		853389B12C0DBB1900EDE68F /* BarcodeScanner */ = {
+			isa = PBXGroup;
+			children = (
+				853389AE2C0DB59F00EDE68F /* BarcodeScannerViewModel.swift */,
+				852005322C09DD7200D03BC6 /* BarcodeScannerView.swift */,
+			);
+			path = BarcodeScanner;
+			sourceTree = "<group>";
+		};
+		853389B22C0DBB3B00EDE68F /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				853389B42C0DBB6F00EDE68F /* UIKit Components */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		853389B42C0DBB6F00EDE68F /* UIKit Components */ = {
+			isa = PBXGroup;
+			children = (
+				853389A82C0B302800EDE68F /* ScannerVC.swift */,
+				853389AA2C0B83ED00EDE68F /* ScannerView.swift */,
+			);
+			path = "UIKit Components";
+			sourceTree = "<group>";
+		};
+		853389B52C0DBBC100EDE68F /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				853389AC2C0DB57C00EDE68F /* AlertItems.swift */,
+			);
+			path = Utilities;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -143,10 +189,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				853389AF2C0DB59F00EDE68F /* BarcodeScannerViewModel.swift in Sources */,
 				853389A92C0B302800EDE68F /* ScannerVC.swift in Sources */,
 				853389AB2C0B83ED00EDE68F /* ScannerView.swift in Sources */,
 				852005332C09DD7200D03BC6 /* BarcodeScannerView.swift in Sources */,
 				852005312C09DD7200D03BC6 /* BarCode_ScannerApp.swift in Sources */,
+				853389AD2C0DB57C00EDE68F /* AlertItems.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
