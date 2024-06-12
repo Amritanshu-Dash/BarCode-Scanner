@@ -18,7 +18,7 @@ struct BarcodeScannerView: View {
             VStack {
                 
                 ScannerView(scannedCode: $viewModel.scannedCode, alertItem: $viewModel.alertItem)
-                    .frame(maxWidth: .infinity, maxHeight: 300)
+                    .frame(maxHeight: 300)
                     .padding()
                 
                 Label("Scanned Barcode:", systemImage: "barcode.viewfinder")
@@ -38,7 +38,7 @@ struct BarcodeScannerView: View {
             
             .alert(item: $viewModel.alertItem) { alertItem in
                 
-                Alert(title: Text(alertItem.title), message: Text(alertItem.message), dismissButton: alertItem.dismissedButton)
+                Alert(title: alertItem.title, message: alertItem.message, dismissButton: alertItem.dismissedButton)
                 
             }
             // no more than 1 alert on an item......................
